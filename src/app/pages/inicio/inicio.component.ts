@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
 export class InicioComponent {
   nombre = 'Angelo';
   apellido = 'Quimi';
+  loadingVisible = false;
+
+  visualizarLoading(){
+    this.loadingVisible = true;
+
+    setTimeout(()=> {this.loadingVisible = false},2000);
+  }
 
 }
+
+
